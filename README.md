@@ -16,7 +16,22 @@ Main kubectl commands
 yml config file
 1. created ngnix-service.yml and applied it
 2. checked service for ips and pods with -o wide to see their ips
-3. 
+
+--------------------------------------------------
+
+Deploying app in kubernetes cluster
+1. copied yml files from gitlab
+2. added port and env to mongo.yml
+3. added username/password in base64 in mongo-secret.yml
+4. applied secret
+5. added secretKeyRef in mongo.yml
+6. added service in mongo.yml, appkied afterwards
+7. added DB_URL to mongo-configmap.yml
+8. added configMapKeyRef to mongo-express.yml and applied it.
+9. Pod was in state crashloop, corrected typo in mongo-express.yml and applied again
+10. added service in mongo-express.yml and applied 
+
+
 
 
 --------------------------------------------------

@@ -31,6 +31,26 @@ Deploying app in kubernetes cluster
 9. Pod was in state crashloop, corrected typo in mongo-express.yml and applied again
 10. added service in mongo-express.yml and applied 
 
+--------------------------------------------------
+
+Namespaces
+1. created namespace manually and set it as default
+2. installed kubens in wsl
+
+--------------------------------------------------
+
+Ingress
+1. copied dashboard-ingress.yml file from gitlab
+2. enabled ingress addon for minikube
+3. tested minikube dashboard
+4. applied dashboard-ingress.yml
+5. edited hosts file
+6. ran minikube tunnel
+
+--------------------------------------------------
+
+Volumes
+1. 
 
 
 

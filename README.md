@@ -58,7 +58,25 @@ ConfigMap & Secret Volume
 
 --------------------------------------------------
 
+Helm Demo - Managed K8s cluster
+1. created Linode account
+2. created K8s cluster with 2 nodes
+3. copied helm yml files from gitlab
+4. copied test-kubeconfig.yaml file from linode and set access to 400
+5. export = KUBECONFIG=test-kubeconfig.yaml
+6. installed Helm in WSL with apt using https://helm.sh/docs/intro/install/
+7. added helm repo bitnami
+8. installed mongodb with values file helm-mongodb.yml
+9. checked in linode for PVCs
+10. applied helm-mongo-express.yml
+11. added helm repo ingress-nginx
+12. helm install nginx-ingress ingress-nginx/ingress-nginx --set controller.publishService.enabled=true
+13. For Hostname i used no-ip.com to test with amwgaming.ddns.net
+14. applied helm-ingress.yml
+15. added some data in mongodb, scaled pods down to 0 with kubectl scale
+16. scaled up to 3 and checked data is still available in mongodb
 
+--------------------------------------------------
 
 
 

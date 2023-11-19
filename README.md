@@ -78,7 +78,16 @@ Helm Demo - Managed K8s cluster
 
 --------------------------------------------------
 
-
+Deploying Images in Kubernetes from private Docker repository
+1. logged into AWS provided docker login command
+2. logged into AWS from inside minikube with AWS token
+3. copied config.json file from inside minikube to WSL
+4. encrypted token and added to secrets file
+5. created secret with kubectl create secret generic my-registry-key
+6. added image name with repo and tag to my-app-deplyoment.yml
+7. added PullPolicy to pull image always and imagePullSecret
+8. applied my-app-deplyoment.yml
+9. removed base64 encrypted token from docker-secret.yml to be safe
 
 --------------------------------------------------
 

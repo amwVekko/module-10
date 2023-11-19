@@ -49,8 +49,12 @@ Ingress
 
 --------------------------------------------------
 
-Volumes
-1. 
+ConfigMap & Secret Volume
+1. copied starting code from gitlab
+2. applied config and secret file
+3. configured config and secret volumes/mounts in mosquitto.yml
+4. applied mosquitto.yml
+5. execed into the container and checked secret and config file
 
 
 

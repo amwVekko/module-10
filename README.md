@@ -91,4 +91,13 @@ Deploying Images in Kubernetes from private Docker repository
 
 --------------------------------------------------
 
+Deploy microservice application
+1. cloned gitlab project "microservice-demo" and config.yml
+2. created new k8s cluster on linode with 3 worker nodes
+3. downloaded kubeconfig.yml, set access to 400 and export = KUBECONFIG
+4. created namespace and applied config.yml to it
+5. tested access to shop via browser
+
+--------------------------------------------------
+
 Reference: DevOps Bootcamp and TWN

@@ -56,6 +56,10 @@ ConfigMap & Secret Volume
 4. applied mosquitto.yml
 5. execed into the container and checked secret and config file
 
+--------------------------------------------------
+
+
+
 
 
 --------------------------------------------------

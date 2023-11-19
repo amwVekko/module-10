@@ -96,7 +96,13 @@ Deploy microservice application
 2. created new k8s cluster on linode with 3 worker nodes
 3. downloaded kubeconfig.yml, set access to 400 and export = KUBECONFIG
 4. created namespace and applied config.yml to it
-5. tested access to shop via browser
+5. as in next video seen, app can only be accessed by loadbalancer (port 8080)
+
+--------------------------------------------------
+
+Create helm chart for microservice
+1. cloned helm chart from gitlab
+
 
 --------------------------------------------------
 

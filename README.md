@@ -102,6 +102,18 @@ Deploy microservice application
 
 Create helm chart for microservice
 1. cloned helm chart from gitlab
+2. tested a template with helm template -f ad-service-values.yaml
+3. helm lint verify the syntax
+4. using helm install to install email-service-values.yaml in chart "microservice"
+5. tested helm install --dry-run -f values/redis-vaules.yaml rediscart charts/redis
+
+--------------------------------------------------
+
+Deploy microservices with helmfile
+1. used install.sh to deploy all microservices
+2. used uninstall.sh to cleanup cluster
+3. used helmfile sync and checked with helmfile list
+4. helmfile destroy to cleanup cluster
 
 
 --------------------------------------------------
